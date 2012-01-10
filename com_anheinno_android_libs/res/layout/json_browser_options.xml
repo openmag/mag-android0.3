@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<CheckBox android:text="@string/json_config_screen_cache_enable"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:id="@+id/cb_cache_enabled"></CheckBox>
+	<TextView android:layout_width="wrap_content"
+		android:text="@string/json_config_screen_cache_size"
+		android:layout_height="wrap_content" android:id="@+id/tv_cache_dir_size"></TextView>
+	<Button android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/json_config_screen_purge_cache"
+		android:id="@+id/bt_purge_cache"></Button>
+	<TableRow android:baselineAligned="false"
+		android:layout_height="wrap_content" android:layout_width="wrap_content">
+		<TextView android:layout_gravity="center"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/json_config_screen_cache_default_expire"></TextView>
+		<EditText android:text="72" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/et_expire_hours"></EditText>
+	</TableRow>
+	<CheckBox android:text="@string/json_config_screen_relay_enable"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:id="@+id/cb_relay_enable"></CheckBox>
+	<TextView android:id="@+id/tv_relay_uri"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:text="@string/json_config_screen_relay_service_uri"></TextView>
+	<EditText android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:id="@+id/et_relay_service_uri"></EditText>
+</TableLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="contact_config_screen_service_url_prompt">Contact service URI: </string>
+    <string name="user_info_prompt_email">Email: </string>
+    <string name="user_info_prompt_mobile">Mobile: </string>
+    <string name="user_info_prompt_workphone">Phone (Work): </string>
+    <string name="user_info_prompt_homephone">Phone (Home): </string>
+    <string name="user_info_prompt_place">Place:</string>
+    <string name="user_info_prompt_account">Account: </string>
+    <string name="contact_input_select_button_text">Select</string>
+    <string name="contact_input_invalid_prompt">Please select at least one contact!</string>
+    <string name="CONTACTINPUT_MAXNUMBER_ALERT">Number of recipients cannot exceeds </string>
+    <string name="contact_screen_search_text_hint">Find contacts</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="contact_config_screen_service_url_prompt">联系人服务地址：</string>
+    <string name="user_info_prompt_email">邮箱：</string>
+    <string name="user_info_prompt_mobile">手机：</string>
+    <string name="user_info_prompt_workphone">工作电话：</string>
+    <string name="user_info_prompt_homephone">家庭电话：</string><string name="user_info_prompt_place">地点：</string>
+    
+    <string name="user_info_prompt_account">账号：</string>
+    <string name="contact_input_select_button_text">选择</string>
+    <string name="contact_input_invalid_prompt">请选择至少一个联系人！</string>
+    <string name="CONTACTINPUT_MAXNUMBER_ALERT">联系人数不能超过</string>
+    <string name="contact_screen_search_text_hint">查找联系人</string>
+</resources>

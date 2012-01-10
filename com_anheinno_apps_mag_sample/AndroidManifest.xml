@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.anheinno.apps.mag.sample" android:versionCode="1"
+	android:versionName="1.0">
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="com.anhe_inno.pam.permission.SEND"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+	<!-- android:debuggable="false" com.anheinno.pam.libs.application.Application -->
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+		<activity android:name=".MAGApp" android:launchMode="singleTask"
+		    android:configChanges="orientation"
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity
+			android:name="com.anheinno.android.libs.attachment.AttachmentDownloadActivity"
+			android:configChanges="orientation">
+		</activity>
+
+		<activity
+			android:name="com.anheinno.libs.mag.controls.thirdapp.ThirdAppLinkedControlActivity"
+		    android:launchMode="singleTask"
+			android:configChanges="orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.SEND" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="text/plain" />
+			</intent-filter>
+		</activity>
+
+		<service
+			android:name="com.anheinno.android.libs.attachment.AttachmentDownloadService">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</service>
+
+		<!-- service android:name="com.anheinno.android.libs.mag.MAGPushClientApp">
+		</service-->
+
+		<!--receiver android:name="com.anheinno.android.libs.mag.DealBroadcastReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<action android:name="android.intent.action.PHONE_STATE" />
+			</intent-filter>
+		</receiver-->
+
+		<!--receiver android:name="com.anheinno.android.libs.mag.MAGPushClientAppReceiver"
+			android:permission="com.anhe_inno.pam.permission.RECEIVE">
+			<intent-filter>
+				<action android:name="com.anheinno.intent.action.PUSHMSG" />
+				<category android:name="com.anheinno.apps.mag" />
+			</intent-filter>
+		</receiver-->
+
+	</application>
+
+	<uses-sdk android:minSdkVersion="7" />
+	<supports-screens android:anyDensity="true" />
+</manifest>
